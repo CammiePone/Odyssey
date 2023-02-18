@@ -1,0 +1,41 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "dev.cammiescorner",
+		"id": "odyssey",
+		"version": "${version}",
+		"metadata": {
+			"name": "Odyssey",
+			"description": "A simplistic questing and dialogue mod.",
+			"contributors": {
+				"Cammie": "Owner"
+			},
+			"contact": {
+				"homepage": "https://cammiescorner.dev/",
+				"issues": "https://github.com/CammiePone/Odyssey/issues",
+				"sources": "https://github.com/CammiePone/Odyssey"
+			},
+			"icon": "assets/odyssey/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "dev.cammiescorner.odyssey.Odyssey",
+			"client_init": "dev.cammiescorner.odyssey.client.OdysseyClient"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.6-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=5.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19.3"
+			}
+		]
+	},
+	"mixin": "odyssey.mixins.json"
+}

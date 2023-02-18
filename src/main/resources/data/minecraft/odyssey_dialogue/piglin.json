@@ -1,0 +1,27 @@
+{
+  "dialogue": [
+    {
+      "prerequisite": "minecraft:nether/root",
+      "dialogue_options": [
+        {
+          "text": {
+            "text": "I have come to learn the ways of the wizard!"
+          },
+          "response": {
+            "text": "Blargh"
+          },
+          "grants": "minecraft:end/root"
+        },
+        {
+          "text": {
+            "text": "Goodbye."
+          },
+          "response": {
+            "text": "Blah"
+          },
+          "close_dialogue": true
+        }
+      ]
+    }
+  ]
+}
